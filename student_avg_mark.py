@@ -14,7 +14,8 @@ def find_average_mark(students):
         for j in students[i]:
             total += j
             count += 1
-    return total/count
+    average_mark = total/count
+    print(f"The average mark was {average_mark}")
 
 
 def find_top_mark(students):
@@ -27,10 +28,10 @@ def find_top_mark(students):
                 top_student = i
     print(f"Top student was {top_student} with a mark of {top_mark}")
 
-my_students = {
-    # "m": [1, 2, 3, 4],
-    # "h": [10, 20, 30, 40]
-}
+
+# main routine
+
+my_students = {}
 
 while True:
     name = input("Name: ").lower()
@@ -40,7 +41,5 @@ while True:
 
     add_student(name, mark, my_students)
 
-    print(my_students)
-
-my_average_mark = find_average_mark(my_students)
-print(my_average_mark)
+find_average_mark(my_students)
+find_top_mark(my_students)
