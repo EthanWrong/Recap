@@ -1,4 +1,4 @@
-"""Program that keeps track of student marks and grades"""
+"""Exercise 4: Program that keeps track of student marks and grades"""
 
 
 def add_student(name, mark, students):
