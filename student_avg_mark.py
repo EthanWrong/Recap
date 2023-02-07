@@ -14,7 +14,7 @@ def find_average_mark(students):
         for j in students[i]:
             total += j
             count += 1
-    average_mark = total/count
+    average_mark = round(total/count)
     print(f"The average mark was {average_mark}")
 
 
